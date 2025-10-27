@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            font-family: sans-serif;
+            box-sizing: border-box;
+        }
+
+        .main {
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .logo {
+            width: 160px;
+        }
+
+        video {
+            position: absolute;
+            z-index: -1;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+        }
+
+        header {
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: white;
+            font-weight: 600;
+            padding: 15px;
+            border-radius: 50%;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.542);
+            transition: 2s;
+            color: black;
+            border-radius: 50%;
+        }
+
+        .content h1 {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.65);
+            margin-top: 70px;
+            font-size: 90px;
+            font-weight: 800;
+        }
+
+        button {
+            display: block;
+            padding: 15px 60px;
+            margin: 20px auto;
+            border-radius: 25px;
+            color: black;
+            border: none;
+            font-size: 20px;
+            cursor: pointer;
+            font-weight: 600;
+            background-color: rgba(97, 205, 248, 0.54);
+        }
+
+        button:hover {
+            background-color: rgb(0, 153, 213);
+            transition: 2s;
+            color: black;
+            border-radius: 50%;
+        }
+
+        @media screen and (max-width:700px) {
+            header{
+                flex-direction: column;
+            }
+            .content h1{
+                font-size: 35px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <video src="video1.mp4" autoplay loop muted></video>
+        <header>
+            <img src="Illustration-of-logo-design-template-on-transparent-background-PNG.png" class="logo">
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Travel</a>
+                <a href="#">Blogs</a>
+                <a href="#">Support</a>
+            </nav>
+        </header>
+        <div class="content">
+            <h1>EXPLORE THE WORLD</h1>
+            <button type="button">Explore</button>
+        </div>
+
+    </div>
+</body>
+
+</html>
