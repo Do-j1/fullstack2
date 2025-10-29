@@ -1,11 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <script>
+        function addContent() {
+            document.getElementById("dd").innerHTML = "welcome to java script "
+            document.getElementById("dd").style.backgroundColor = "lightgreen"
+            document.getElementById("dd").innerHTML = document.getElementById("dd1").value
+        }
+
+    </script>
 </head>
+
 <body>
-    
+    <p id="dd"></p>
+    <input type="text" id="dd1">
+    <button onclick="addContent()">click me</button>
+
 </body>
+
 </html>
